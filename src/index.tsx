@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <MoralisProvider 
-      serverUrl='https://orvhighnhdrt.usemoralis.com:2053/server'  
-      appId='RyIeBHDJN9a6AP3H8bC8tzZfYYTkovkrVIhSMsT0'>
+      serverUrl='https://d8tdshnwaepb.usemoralis.com:2053/server'
+      appId='dqkfmKHCu1vl17sLEOFgJ9RnwsJyrMgsqNLKTgQE'>
       <App />
     </MoralisProvider>
   </React.StrictMode>

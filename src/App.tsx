@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
 
-  const {authenticate, isAuthenticated, isAuthenticating, user, account, logout} = useMoralis();
+  const {authenticate, isAuthenticated, isAuthenticating, Moralis, user, account, logout} = useMoralis();
   const contractProcessor = useWeb3ExecuteFunction();
 
   useEffect(() => {
@@ -43,6 +43,7 @@ function App() {
       contractAddress: '0x7ed80F34Bf90Eff85423D88b7B827b75A51B6552',
       functionName: 'mintNFTs',
       abi: taurosABI,
+      msgValue: Moralis.Units.ETH("0.05"),
       params: {
         _count: 1,
       }
